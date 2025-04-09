@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="./index.html">PORTO-|-FO-|-LIO</a>
+        </h1>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="./index.html">Home </a></li>
+            <li class="nav__item"><a href="./about.html">Who Am I</a></li>
+            <li class="nav__item"><a href="./works.html">My Works</a></li>
+          </ul>
+        </nav>
+        <div id="myNav" class="MobileMenu">
+          <a
+            href="javascript:void(0)"
+            class="MobileMenu__closebtn"
+            onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="MobileMenu__content">
+            <a href="./index.html" class="MobileMenu__link">Home</a>
+            <a href="./about.html" class="MobileMenu__link">Who Am I </a>
+            <a href="./works.html" class="MobileMenu__link">My works</a>
+            <!-- <a href="#" class="MobileMenu__link">Say Hello</a> -->
+          </div>
+        </div>
+
+        <span
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          class="MobileMenu__button"
+          >&#9776;
+        </span>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="slide">
+        <div class="slide__inner"></div>
+      </section>
+
+      <section class="self">
+        <div class="self__inner">
+          <h2 class="self__topic">
+            <div class="name__japanese">ディネシュ　シェラーン</div>
+            <div class="name__english">Dinesh Sheran</div>
+          </h2>
+          <div class="self__pic">
+            <img src="./images/IMG_0766_jpg 2.JPG" alt="" />
+          </div>
+
+          <!-- Professional Background Section -->
+          <div class="self__section">
+            <h3 class="self__title">職業的な背景</h3>
+            <p class="self__about">
+              現在、Web開発者としてフロントエンド開発に注力しています。特にReactを使ったウェブアプリケーションの開発に情熱を持っています。
+              私はHTML、CSS、JavaScript、Reactに熟練しており、ユーザーエクスペリエンスの最適化にも力を入れています。また、問題解決とコミュニケーション能力も高く、チームでの協力を重視しています。
+            </p>
+          </div>
+
+          <!-- Career and Learning Goals Section -->
+          <div class="self__section">
+            <h3 class="self__title">キャリアと学習の目標</h3>
+            <p class="self__about">
+              今後、フルスタック開発者として活躍し、より多くの高度なアプリケーションを作成したいと考えています。また、新しいプログラミング言語やツールを学び続けることでスキルを向上させることを目指しています。
+            </p>
+          </div>
+
+          <!-- Personal Interests Section -->
+          <div class="self__section">
+            <h3 class="self__title">個人的な興味</h3>
+            <p class="self__about">
+              プライベートでは、料理やハイキング、写真撮影を楽しんでいます。学び続けることを大切にしており、協力的なチーム環境で成長することを重視しています。
+            </p>
+          </div>
+
+          <!-- Contact Section -->
+          <div class="self__section">
+            <h3 class="self__title">お問い合わせ</h3>
+            <p class="self__about">
+              もしご興味があれば、以下のリンクから私のポートフォリオやソーシャルメディアをご覧いただけます。
+              <a href="https://github.com/dineshsheran" target="_blank"
+                >GitHub</a
+              >
+              |
+              <a href="https://www.linkedin.com/in/dineshsheran" target="_blank"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills__inner">
+          <div class="skills__coding">
+            <h3 class="skills__topic">Coding</h3>
+            <div class="skills__list">
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+
+              <div class="skills__divider"></div>
+            </div>
+          </div>
+          <div class="skills__design">
+            <h3 class="skills__topic">Design</h3>
+            <div class="skills__list">
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+              <div class="skills__item">
+                <img src="./images/html-5.png" alt="" class="skills__img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner">
+        <ul class="footer__icons">
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/envelope.png" alt="Gmail" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/facebook-logo.png" alt="Facebook" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/instagram (1).png" alt="Instagram" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/logos.png" alt="Twitter" />
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="copy">
+          <small>Dinesh Sheran @ All Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

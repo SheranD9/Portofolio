@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
+    />
+    <title>Works</title>
+    <!-- <link rel="stylesheet" href="./works.css" /> -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+       <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="./index.html">PORTO-|-FO-|-LIO</a>
+        </h1>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="./index.html">Home</a></li>
+            <li class="nav__item"><a href="./about.html">Who Am I</a></li>
+            <li class="nav__item"><a href="./works.html">My Works</a></li>
+            <!-- <li class="nav__item"><a href="#say-hello">Say Hello</a></li> -->
+          </ul>
+        </nav>
+
+        <div id="myNav" class="MobileMenu">
+          <a
+            href="javascript:void(0)"
+            class="MobileMenu__closebtn"
+            onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="MobileMenu__content">
+            <a href="./index.html" class="MobileMenu__link">Home</a>
+            <a href="./about.html" class="MobileMenu__link">Who Am I </a>
+            <a href="./works.html" class="MobileMenu__link">My works</a>
+            <!-- <a href="#" class="MobileMenu__link">Say Hello</a> -->
+          </div>
+        </div>
+
+        <span
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          class="MobileMenu__button"
+          >&#9776;
+        </span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__inner">
+        <h1 class="main__topic">My Works</h1>
+        <p class="main__intro">
+          これはテストのための仮の文章です。文章の長さや改行のバランスを確認するために使用されます。日本語の文章がどのように表示されるかを試すのに最適です。デザインの調整が必要な場合は、実際のテキストが用意されるまでこのような仮の文章を使用できます。
+        </p>
+        <section class="works">
+          <div class="works__inner">
+            <div class="works__content" style="--quantity: 6">
+              <div class="works__item" style="--position: 1" id="item>
+                <a href="#" target="_blank">
+                  <img
+                    src="./images/gradient-galaxy-background_52683-140335.avif"
+                    alt="Project "
+                    class="works__itemIMG"
+                  />
+                </a>
+              </div>
+              <div class="works__item" style="--position: 2" id="item">
+                <a href="./singel.html" target="_blank">
+                  <img
+                    src="./images/taste.png"
+                    alt="Project "
+                    class="works__itemIMG"
+                  />
+                </a>
+                <h2 class="item__name">Taste</h2>
+              </div>
+              <div class="works__item" style="--position: 3" id="item>
+                <a href="#" target="_blank">
+                  <img
+                    src="./images/06.jpg"
+                    alt="Project "
+                    class="works__itemIMG"
+                  />
+                </a>
+              </div>
+              <div class="works__item" style="--position: 4" id="item>
+                <a href="#" target="_blank">
+                  <img
+                    src="./images/ramen.png"
+                    alt="Project "
+                    class="works__itemIMG"
+                  />
+                </a>
+                <h2 class="item__name">Re麺ber</h2>
+              </div>
+              <div class="works__item" style="--position: 5" id="item>
+                <a href="#" target="_blank">
+                  <img
+                    src="./images/06.jpg"
+                    alt="Project "
+                    class="works__itemIMG"
+                  />
+                </a>
+              </div>
+              <div class="works__item" style="--position: 6" id="item>
+                <a href="#" target="_blank">
+                  <img
+                    src="./images/intro.jpg"
+                    alt="Project "
+                    class="works__itemIMG"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <ul class="footer__icons">
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/envelope.png" alt="Gmail" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/facebook-logo.png" alt="Facebook" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/instagram (1).png" alt="Instagram" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="#" class="sns">
+                <img src="./images/logos.png" alt="Twitter" />
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="copy">
+          <small>Dinesh Sheran @ All Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+     <script src="script.js"></script>
+  </body>
+</html>

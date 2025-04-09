@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porto-FO-Lio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div class="page-loader">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <a href="./index.html">PORTO-|-FO-|-LIO</a>
+        </h1>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="./index.html">Home</a></li>
+            <li class="nav__item"><a href="./about.html">Who Am I</a></li>
+            <li class="nav__item"><a href="./works.html">My Works</a></li>
+            <!-- <li class="nav__item"><a href="#say-hello">Say Hello</a></li> -->
+          </ul>
+        </nav>
+
+        <div id="myNav" class="MobileMenu">
+          <a
+            href="javascript:void(0)"
+            class="MobileMenu__closebtn"
+            onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="MobileMenu__content">
+            <a href="./index.html" class="MobileMenu__link">Home</a>
+            <a href="./about.html" class="MobileMenu__link">Who Am I </a>
+            <a href="./works.html" class="MobileMenu__link">My works</a>
+            <!-- <a href="#" class="MobileMenu__link">Say Hello</a> -->
+          </div>
+        </div>
+
+        <span
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          class="MobileMenu__button"
+          >&#9776;
+        </span>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="hero">
+        <div class="hero__inner">
+          <video autoplay muted loop playsinline class="hero__background-video">
+            <source src="./images/abstrac.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="hero__content">
+            <h1>Hi, I'm Dinesh Sheran</h1>
+            <p>Web Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="intro" id="intro">
+        <div class="intro__inner">
+          <div class="intro__content fade-in">
+            <h3 class="intro__topic">What I Do</h3>
+            <p class="intro__text">
+              これはテストのための仮の文章です。文章の長さや改行のバランスを確認するために使用されます。日本語の文章がどのように表示されるかを試すのに最適です。デザインの調整が必要な場合は、実際のテキストが用意されるまでこのような仮の文章を使用できます。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="Who-am-I">
+        <div class="about__inner">
+          <div class="about__all fade-in">
+            <div class="about__content">
+              <h3 class="about__topic">Who am I</h3>
+              <p class="about__text">
+                これはテストのための仮の文章です。文章の長さや改行のバランスを確認するために使用されます。日本語の文章がどのように表示されるかを試すのに最適です。デザインの調整が必要な場合は、実際のテキストが用意されるまでこのような仮の文章を使用できます。
+              </p>
+            </div>
+          </div>
+
+          <div class="about__img fade-in">
+            <img
+              src="./images/IMG_0766_jpg 2.JPG"
+              alt="Picture of Me"
+              class="pic"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="work__inner">
+          <h3 class="work__topic fade-in">My Works</h3>
+          <p class="work__description fade-in">
+            これはテストのための仮の文章です。文章の長さや改行のバランスを確認するために使用されます。日本語の文章がどのように表示されるかを試すのに最適です。デザインの調整が必要な場合は、実際のテキストが用意されるまでこのような仮の文章を使用できます。
+          </p>
+
+          <div class="work__content">
+            <div class="work__column work__column--left">
+              <article class="content__article">
+                <img src="./images/intro.jpg" alt="Work 1" />
+              </article>
+              <article class="content__article">
+                <img src="./images/intro.jpg" alt="Work 2" />
+              </article>
+              <!-- <article class="content__article">
+                <img src="./images/intro.jpg" alt="Work 3" />
+              </article> -->
+            </div>
+
+            <div class="work__column work__column--right">
+              <article class="content__article">
+                <img src="./images/intro.jpg" alt="Work 4" />
+              </article>
+              <article class="content__article">
+                <img src="./images/intro.jpg" alt="Work 5" />
+              </article>
+              <!-- <article class="content__article">
+                <img src="./images/intro.jpg" alt="Work 6" />
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <ul class="footer__icons">
+          <li>
+            <div class="icon">
+              <a href="mailto:example@example.com" class="sns">
+                <img src="./images/envelope.png" alt="Gmail" />
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="icon">
+              <a href="https://facebook.com" class="sns">
+                <img src="./images/facebook-logo.png" alt="Facebook" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="https://instagram.com" class="sns">
+                <img src="./images/instagram (1).png" alt="Instagram" />
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <a href="https://twitter.com" class="sns">
+                <img src="./images/logos.png" alt="Twitter" />
+              </a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="copy">
+          <small>Dinesh Sheran @ All Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
