@@ -15,7 +15,7 @@ body {
 }
 @media screen and (max-width: 720px) {
   body {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
@@ -507,14 +507,6 @@ body {
 @media screen and (max-width: 720px) {
   .works__text h1 {
     font-size: 5em;
-  }
-}
-.works__text h2 {
-  font-size: 3em;
-}
-@media screen and (max-width: 720px) {
-  .works__text h2 {
-    font-size: 1.5em;
   }
 }
 .works__intro {

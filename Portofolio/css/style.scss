@@ -43,7 +43,7 @@ body {
   color: #fff;
 
   @include m-query("mobile") {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
 
@@ -215,6 +215,15 @@ body {
     padding: 2rem;
   }
 }
+
+// .hero__content {
+//   h1 {
+//     font-size: 200px;
+//     @include m-query("mobile") {
+//       font-size: 2em;
+//     }
+//   }
+// }
 
 .intro {
   margin-top: 150px;
@@ -558,13 +567,13 @@ body {
       }
     }
 
-    h2 {
-      font-size: 3em;
+    // h2 {
+    //   font-size: 2em;
 
-      @include m-query("mobile") {
-        font-size: 1.5em;
-      }
-    }
+    //   // @include m-query("mobile") {
+    //   //   font-size: 1.5em;
+    //   // }
+    // }
   }
 
   &__intro {
