@@ -818,6 +818,10 @@ body {
   transform: scale(1.1);
 }
 
+.Github {
+  color: #3498db;
+}
+
 .MobileMenu {
   height: 100%;
   width: 0;
