@@ -777,6 +777,7 @@ body {
 }
 .details__description {
   text-align: justify;
+  margin: 10px 0;
 }
 
 .production {
@@ -792,6 +793,9 @@ body {
   margin: 10px 0 10px 0;
   font-size: 2em;
   font-family: "Aladin", system-ui;
+}
+.production__details {
+  margin: 20px 0;
 }
 
 .step {

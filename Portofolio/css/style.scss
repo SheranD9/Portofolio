@@ -47,6 +47,10 @@ body {
   }
 }
 
+// .singel__body{
+//   background: url();
+// }
+
 /* Page Loader */
 .page-loader {
   position: fixed;
@@ -833,6 +837,7 @@ body {
   }
   &__description {
     text-align: justify;
+    margin: 10px 0;
   }
 }
 
@@ -846,6 +851,9 @@ body {
     margin: 10px 0 10px 0;
     font-size: 2em;
     font-family: "Aladin", system-ui;
+  }
+  &__details {
+    margin: 20px 0;
   }
 }
 .step {
