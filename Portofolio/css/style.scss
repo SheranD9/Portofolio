@@ -855,6 +855,32 @@ body {
   &__details {
     margin: 20px 0;
   }
+  &__git {
+    a {
+      color: #3498db;
+      position: relative;
+      display: inline-block;
+    }
+    a::after,
+    a::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(to right, #ff0000, #00ffff);
+      bottom: -5px;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease-out;
+    }
+    a::before {
+      transform-origin: left;
+    }
+    a:hover::before {
+      transform: scaleX(1);
+    }
+  }
 }
 .step {
   border-top: 3px solid #fff;
@@ -874,10 +900,6 @@ body {
     color: #000;
     transform: scale(1.1);
   }
-}
-
-.Github {
-  color: #3498db;
 }
 
 .MobileMenu {
