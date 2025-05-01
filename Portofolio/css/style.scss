@@ -84,8 +84,14 @@ body {
 }
 
 .header {
-  margin: 20px;
+  // margin: 20px;
+  background-color: #fff;
+  color: #000;
 
+  &__about {
+    background-color: #000000;
+    color: #ffffff;
+  }
   &__inner {
     @include m-inner();
     @include m-flex();
@@ -228,7 +234,18 @@ body {
 //     }
 //   }
 // }
-
+.sections {
+  background-color: #a2cbe071;
+  padding: 50px 0 50px;
+  // &__inner {
+  //   background-color: #e6dddd;
+  //   border-radius: 8px;
+  //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  //   margin: 0 auto;
+  //   max-width: 1200px;
+  //   padding: 10px;
+  // }
+}
 .intro {
   margin-top: 150px;
 
@@ -429,7 +446,7 @@ body {
 
 .footer {
   padding: 20px;
-  background-color: #3b3c3e;
+  background-color: #fafafa;
   transition: background-color 0.3s ease;
 
   &__inner {
@@ -485,6 +502,7 @@ body {
 
 .copy {
   font-size: 24px;
+  color: #000;
 
   @include m-query("mobile") {
     font-size: 18px;
@@ -499,105 +517,6 @@ body {
   &__topic {
     font-size: 4em;
     padding: 20px;
-  }
-}
-
-.works {
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  perspective: 1000px;
-
-  &__inner {
-    @include m-inner();
-  }
-
-  &__content {
-    position: absolute;
-    width: 200px;
-    height: 250px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transform-style: preserve-3d;
-    animation: autoRun 20s linear infinite;
-
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
-
-  &__item {
-    position: absolute;
-    inset: 0;
-    transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
-      translateZ(300px);
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-  }
-
-  &__itemIMG {
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  &__text {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    padding-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-    h1 {
-      font-size: 14em;
-      line-height: 1em;
-      color: rgb(2, 2, 2);
-
-      @include m-query("mobile") {
-        font-size: 5em;
-      }
-    }
-
-    // h2 {
-    //   font-size: 2em;
-
-    //   // @include m-query("mobile") {
-    //   //   font-size: 1.5em;
-    //   // }
-    // }
-  }
-
-  &__intro {
-    font-family: "Times New Roman", Times, serif;
-    text-align: right;
-    max-width: 200px;
-
-    @include m-query("mobile") {
-      text-align: center;
-      max-width: 100%;
-    }
-  }
-}
-
-@keyframes autoRun {
-  0% {
-    transform: translate(-50%, -50%) rotateX(-16deg) rotateY(0deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateX(-16deg) rotateY(360deg);
   }
 }
 
@@ -627,6 +546,64 @@ body {
   }
   to {
     opacity: 1;
+  }
+}
+
+.project {
+  margin: 40px 20px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+
+  &__item {
+    width: 100%;
+    /* REMOVE height and object-fit from here */
+    background: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card {
+  transition: transform 0.3s ease;
+  &__:hover {
+    transform: scale(1.05); /* Not too big, looks clean */
+  }
+  &__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+  }
+
+  &__desc {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+
+  &__link {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  :hover {
+    transform: scale(1.1);
   }
 }
 
@@ -782,7 +759,6 @@ body {
   }
   &__divider {
     width: 10px;
-    background-color: #fff;
   }
 
   &__coding &__desing {
@@ -790,7 +766,7 @@ body {
     padding: 20px;
   }
 }
-/* ---sigel.html---*/
+/* ---taste.html---*/
 
 .Project {
   text-align: center;
@@ -912,7 +888,7 @@ body {
   background-color: rgb(0, 0, 0);
   background-color: rgba(33, 60, 119, 1);
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: width 0.3s ease;
 
   &__conntent {
     position: relative;
@@ -960,5 +936,17 @@ body {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+.s-section {
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
   }
 }
