@@ -88,10 +88,6 @@ body {
   background-color: #fff;
   color: #000;
 
-  &__about {
-    background-color: #ffffff;
-    color: #ffffff;
-  }
   &__inner {
     @include m-inner();
     @include m-flex();
@@ -482,7 +478,7 @@ body {
 
 .project {
   margin: 40px 20px;
-  background-color: #d8d7d7;
+  background-color: rgba(200, 200, 200, 0.8);
 
   &__list {
     display: grid;

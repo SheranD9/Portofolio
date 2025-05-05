@@ -64,10 +64,6 @@ body {
   background-color: #fff;
   color: #000;
 }
-.header__about {
-  background-color: #ffffff;
-  color: #ffffff;
-}
 .header__inner {
   max-width: 1280px;
   width: 87.5%;
@@ -485,7 +481,7 @@ body {
 }
 .project {
   margin: 40px 20px;
-  background-color: #d8d7d7;
+  background-color: rgba(200, 200, 200, 0.8);
 }
 .project__list {
   display: grid;
