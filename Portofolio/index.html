@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css"
     />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
     <div class="s-page-1">
@@ -165,29 +166,65 @@
           <script src="script.js"></script>
           <!-- Vanta.js + Three.js Scripts -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 
           <script>
+            var vantaInstances = [];
+
             var setVanta = () => {
               if (window.VANTA) {
-                window.VANTA.RINGS({
-                  el: ".s-page-1 .s-section-1 .s-section",
-                  mouseControls: true,
-                  touchControls: true,
-                  gyroControls: false,
-                  minHeight: 200.0,
-                  minWidth: 200.0,
-                  scale: 1.0,
-                  scaleMobile: 1.0,
-                  backgroundColor: 0x40411,
-                  color: 0x3417be,
-                });
+                // Apply Vanta.NET effect to the s-section
+                vantaInstances.push(
+                  window.VANTA.NET({
+                    el: ".s-page-1 .s-section-1 .s-section",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.0,
+                    minWidth: 200.0,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    color: 0x8eff3f,
+                    backgroundColor: 0x000000,
+                    points: 20.0,
+                    maxDistance: 26.0,
+                    spacing: 16.0,
+                  })
+                );
+
+                // Apply Vanta.BIRDS effect to the hero section
+                vantaInstances.push(
+                  window.VANTA.BIRDS({
+                    el: ".hero",
+                    mouseControls: true,
+                    touchControls: true,
+                    gyroControls: false,
+                    minHeight: 200.0,
+                    minWidth: 200.0,
+                    scale: 1.0,
+                    scaleMobile: 1.0,
+                    backgroundColor: 0x1600,
+                    color1: 0x7dc395,
+                    color2: 0x1f7d41,
+                    birdSize: 0.8,
+                    wingSpan: 12.0,
+                    separation: 38.0,
+                    alignment: 37.0,
+                    cohesion: 64.0,
+                  })
+                );
               }
             };
 
-            // Execute the Vanta effect after the page is fully loaded
+            // Initialize Vanta effects after the DOM is fully loaded
             document.addEventListener("DOMContentLoaded", function () {
               setVanta();
+            });
+
+            // Clean up Vanta instances when navigating away
+            window.addEventListener("beforeunload", function () {
+              vantaInstances.forEach((instance) => instance.destroy());
             });
           </script>
         </div>

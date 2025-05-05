@@ -66,8 +66,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const video = document.querySelector(".background-video");
-  video.playbackRate = 0.2; // Change this value (e.g., 0.5 = half speed)
-});
