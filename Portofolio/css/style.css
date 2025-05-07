@@ -63,6 +63,7 @@ body {
 .header {
   background-color: #fff;
   color: #000;
+  z-index: 9999 !important;
 }
 .header__inner {
   max-width: 1280px;
