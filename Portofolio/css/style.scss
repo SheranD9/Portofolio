@@ -720,7 +720,8 @@ body {
     &__list {
       display: flex;
       flex-wrap: wrap;
-      gap: 48px;
+      gap: 20px;
+      text-align: justify;
     }
   }
   &__item {
