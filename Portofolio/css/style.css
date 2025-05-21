@@ -704,8 +704,7 @@ body {
 .Project .details__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  text-align: justify;
+  gap: 48px;
 }
 .Project__item {
   display: flex;
